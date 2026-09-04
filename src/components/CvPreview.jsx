@@ -47,7 +47,15 @@ const CvPreview = ({generalData, educationData,
                         </div>
                     )}
 
-                    {educationData[0].data.place &&}
+                    {educationData[0].data.place && (
+                        <div className="preview-education-info">
+                            <p className="preview-section-title">EDUCATION</p>
+
+                            <div className="preview-info-box">
+                                
+                            </div>
+                        </div>
+                    )}
                 </div>
             </section>)
         )
