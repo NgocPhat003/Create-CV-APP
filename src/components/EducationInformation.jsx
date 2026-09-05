@@ -135,6 +135,9 @@ const EducationalInformation = ({
                     <button className="form-btn" onClick={() => handleAddForm}>
                         Add education
                     </button>
+                    <button className="form-btn" onClick={() => handleSaveData}>
+                        Save
+                    </button>
                     <button className="form-btn" onClick={() => handleChangePage(2)}>
                         Next &rarr; 
                     </button>      
