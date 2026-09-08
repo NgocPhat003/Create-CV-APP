@@ -52,12 +52,83 @@ const CvPreview = ({generalData, educationData,
                             <p className="preview-section-title">EDUCATION</p>
 
                             <div className="preview-info-box">
-                                
+                                {educationData.map(({ id, data }, index) => (
+                                    <div key={id} className="preview-info-wrapper">
+                                    <p>Education {index + 1}</p>
+
+                                    <div className="preview-info-block">
+                                        <Icon size={1} path={mdiSchool} />
+                                        <p>
+                                        <b>{data.place}</b> &#9473; {data.degree} degree
+                                        </p>
+                                    </div>
+
+                                    <div className="preview-info-block">
+                                        <Icon size={1} path={mdiCalendarMonth} />
+                                        <p>
+                                        {formatDate(data.dateStart)} &#9473;{" "}
+                                        {formatDate(data.dateEnd)}
+                                        </p>
+                                    </div>
+                                </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+
+                    {experienceData[0].data.company && (
+                        <div className="preview-experience-info">
+                            <p className="preview-section-title">EXPERIENCE</p>
+
+                            <div className="preview-info-box">
+                            {experienceData.map(({ id, data }, index) => (
+                                <div className="preview-info-wrapper" key={id}>
+                                <p>Experience {index + 1}</p>
+
+                                <div className="preview-info-block">
+                                    <Icon size={1} path={mdiBriefcase} />
+                                    <p>
+                                    <b>{data.company}</b> &#9473; {data.position}
+                                    </p>
+                                </div>
+
+                                <div className="preview-info-block">
+                                    <Icon size={1} path={mdiMapMarker} />
+                                    <p>
+                                    {data.location}
+                                    </p>
+                                </div>
+
+                                <div className="preview-info-block">
+                                    <Icon size={1} path={mdiCalendarMonth} />
+                                    {
+                                    data.dateEnd ? 
+                                    <p>
+                                        {formatDate(data.dateStart)} &#9473; {formatDate(data.dateEnd)}
+                                    </p> : 
+                                    <p>
+                                        {formatDate(data.dateStart)} &#9473; Current
+                                    </p>
+                                    }
+                                </div>
+
+                                <div className="preview-info-block">
+                                    <Icon size={1} path={mdiFormatListBulleted} />
+                                    <p>
+                                    Responsibilities
+                                    </p>
+                                </div>
+                                <p>
+                                    {data.responsibilities}
+                                </p>
+                              </div>
+                            ))}
                             </div>
                         </div>
                     )}
                 </div>
             </section>)
-        )
-        
+        );
     };
+
+    export default CvPreview;
