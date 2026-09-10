@@ -1,4 +1,5 @@
 import { mdiDelete, mdiSchool, mdiTownHall } from "@mdi/js";
+import "../styles/forms.css";
 import IconModule from "@mdi/react";
 
 const FormEducationInformation = ({ index, idForm, deleteForm, data,

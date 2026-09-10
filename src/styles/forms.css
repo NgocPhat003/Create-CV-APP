@@ -1,0 +1,154 @@
+sup {
+    color: red;
+    font-size: 14px;
+}
+
+.form-header {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-wrapper {
+    color: red;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.h2-information-page {
+    text-align: center;
+    padding: 15px;
+}
+
+.general-information {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.forms-block {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-wrapper {
+    margin: 0 auto;
+    padding: 25px 50px;
+    border: var(--border);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #fff;
+}
+
+.input-title {
+    font-size: 18px;
+}
+
+.information-description {
+    text-align: center;
+    color: var(--color-secondary-text);
+    font-family: 'Inter';
+    padding: 5px 0 30px 0;
+}
+
+.input-block {
+    width: 100%;
+}
+
+.input-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--bgc-form-input);
+    border: var(--border);
+    border-radius: 5px;
+    padding: 5px;
+    transition: border-color 0.4s ease;
+}
+
+.form-input {
+    border: none;
+    background-color: var(--bgc-form-input);
+    padding: 2px;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 500;
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+}
+
+input[type='date'] {
+    text-align: center;
+    cursor: pointer;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.form-input-textarea {
+    width: 100%;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    resize: none;
+    min-height: 200px;
+    padding: 2px;
+    border: none;
+    background-color: var(--bgc-form-input);
+}
+
+.form-input-textarea:focus {
+    outline: none;
+}
+
+.input-wrapper:focus-within {
+    border-color: var(--border-color-form-input-focus);
+}
+
+.input-error {
+    color: red;
+    font-family: 'Inter';
+    font-size: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-block {
+    padding: 15px 0 15px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-block button {
+    background-color: var(--bgc-cv-app-btn-block);
+}
+
+.form-btn {
+    padding: 5px 10px;
+    border: 1px solid var(--border-color-cv-app-btn);
+    border-radius: 5px;
+    background-color: var(--bgc-cv-app-btn);
+    color: var(--text-color-cv-app-btn);
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.5s ease,
+        border-color 0.5s ease;
+}
+
+.form-btn:hover {
+    background-color: var(--bgc-cv-app-btn-hover);
+    color: var(--text-color-cv-app-btn-hover);
+}

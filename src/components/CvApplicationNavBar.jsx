@@ -1,4 +1,4 @@
-
+import "../styles/cv.css";
 
 const CvApplicationNavBar = ({ index, onSend }) => {
   const handleChangeForm = (target) => {

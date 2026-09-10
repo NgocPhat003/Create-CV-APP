@@ -1,4 +1,5 @@
 import { useState } from  "react";
+import "../styles/forms.css";
 import FormGeneralInformation from "./FormGeneralInformation.jsx";
 
 const GeneralInformation = ({ changePage, generalData, setGeneralData }) => {

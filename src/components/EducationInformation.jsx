@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/forms.css";
 import FormEducationInformation from "./FormEducationInformation.jsx";
 
 const EducationalInformation = ({

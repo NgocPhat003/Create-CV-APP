@@ -1,4 +1,5 @@
 import IconModule from '@mdi/react';
+import '../styles/forms.css';
 import { mdiAccount, mdiEmailOutline, mdiPhone } from '@mdi/js';
 
 const FormGeneralInformation = ({generalData, setGeneralData,

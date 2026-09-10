@@ -1,5 +1,6 @@
 import { mdiBriefcase, mdiCalendarMonth, mdiEmail, mdiFormatListBulleted, mdiMapMarker, mdiPhone, mdiSchool } from "@mdi/js";
 import IconModule from "@mdi/react";
+import "../styles/cv.css";
 
 const CvPreview = ({generalData, educationData, 
     experienceData, showPreview}) => {

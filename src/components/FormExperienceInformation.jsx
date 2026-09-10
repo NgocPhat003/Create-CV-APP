@@ -1,4 +1,5 @@
 import IconModule from "@mdi/react";
+import "../styles/forms.css";
 import { mdiAccountTie, mdiBriefcase, mdiDelete, mdiMapMarker } from "@mdi/js";
 
 const FormExperienceInformation = ({
